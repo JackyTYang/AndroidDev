@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Jacky\'s First Android App</string>
+    <string name="btn_change">更换文本文字</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyActivity">
+
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="239dp"
+        android:layout_height="193dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/BtnToDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="157dp"
+        android:text="How Are You?"
+        android:background="@drawable/shape"
+        app:backgroundTint="#FF5722" />
+
+    <Button
+        android:id="@+id/BtnToMain"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:background="@drawable/shape"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pic"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="90dp"
+        android:text="2020-02-12 获得"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <ImageView
+        android:id="@+id/pic2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/strawberry"
+        android:layout_above="@+id/pic"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="-30dp"
+        android:layout_toRightOf="@+id/textView2"/>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pic"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="坐姿模范生"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pic"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#00E2FF"
+        android:gravity="center"
+        android:text="恭喜你成为大力自习室中最优秀的坐姿模范生"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="normal"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="249dp" />
+</RelativeLayout>
